@@ -1,0 +1,49 @@
+.hero {
+    width: 70%;
+    min-height: 400px;
+    display: grid;
+    align-content: center;
+    margin-inline: auto;
+    position: relative;
+    // padding-block: 5rem;
+    line-height: 2rem;
+    .hero-description {
+        padding-inline: 5rem;
+        padding-block: 8rem;
+        &::after {
+            content: "";
+            width: 700px;
+            height: 505px;
+            background-image: url("../images/hero-image.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: -5rem;
+        }
+        .btn:first-of-type {
+            background-color: $hero-btn-bg-1;
+            margin-inline-end: 1.4rem;
+        }
+        .btn {
+            background-color: $hero-btn-bg-2;
+            color: $nav-color;
+            font-weight: 600;
+            border-radius: 5rem;
+            text-transform: uppercase;
+            padding-inline: 1rem;
+            font-size: 0.8rem;
+            margin-inline: 2rem;
+            margin-block-start: 3rem;
+        }
+    }
+    h1 {
+        font-weight: 800;
+        line-height: 3rem;
+    }
+    p{
+        width: 50ch;
+        margin-block: 1rem;
+    }
+}

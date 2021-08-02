@@ -1,0 +1,9 @@
+header{
+    background-image: url('../images/hero-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $nav-color;
+}
+@import "hero";
+@import "navbar";

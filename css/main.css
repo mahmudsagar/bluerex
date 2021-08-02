@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+header {
+  background-image: url("../images/hero-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero {
+  width: 70%;
+  min-height: 400px;
+  display: grid;
+  align-content: center;
+  margin-inline: auto;
+  position: relative;
+  line-height: 2rem;
+}
+
+.hero .hero-description {
+  padding-inline: 5rem;
+  padding-block: 8rem;
+}
+
+.hero .hero-description::after {
+  content: "";
+  width: 700px;
+  height: 505px;
+  background-image: url("../images/hero-image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: -5rem;
+}
+
+.hero .hero-description .btn:first-of-type {
+  background-color: #f52469;
+  margin-inline-end: 1.4rem;
+}
+
+.hero .hero-description .btn {
+  background-color: rgba(105, 50, 143, 0.685);
+  color: white;
+  font-weight: 600;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  padding-inline: 1rem;
+  font-size: 0.8rem;
+  margin-inline: 2rem;
+  margin-block-start: 3rem;
+}
+
+.hero h1 {
+  font-weight: 800;
+  line-height: 3rem;
+}
+
+.hero p {
+  width: 50ch;
+  margin-block: 1rem;
+}
+
+.navbar .nav-link {
+  color: white;
+  font-size: 1.1rem;
+  font-size: 600;
+}
+
+.navbar .nav-link:hover {
+  color: white;
+}
+
+.navbar #nav-toggler {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.show-sidenav {
+  transform: translateX(0) !important;
+}
+
+.sidenav {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  background: linear-gradient(90deg, #9a1327, #41215f);
+  width: 25rem;
+  display: grid;
+  grid-template-rows: 7.5rem auto;
+  justify-content: center;
+  min-height: 100%;
+  transition: transform 1s ease-in-out;
+  transform: translateX(-25rem);
+}
+
+.sidenav .navbar-brand {
+  margin-block: 1rem;
+}
+
+.sidenav li {
+  list-style: none;
+  margin-block-end: 1rem;
+}
+
+.sidenav a {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
